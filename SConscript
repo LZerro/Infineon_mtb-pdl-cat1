@@ -121,3 +121,4 @@ if GetDepend(['SOC_XMC7200D_E272K8384AA']):
     path += [cwd + '/devices/COMPONENT_CAT1C/include/ip']
 
 group = DefineGroup('Libraries', src, depend=[''], CPPPATH=path)
+Return('group')
