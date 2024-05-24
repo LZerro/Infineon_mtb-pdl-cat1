@@ -44,6 +44,8 @@ if GetDepend(['SOC_CY8C6247BZI_D54']):
 
 if GetDepend(['SOC_CY8C6347BZI_BLD53']):
     src += ['devices/COMPONENT_CAT1A/source/cy_device.c']
+    src += ['drivers/source/cy_flash.c']
+    src += ['drivers/source/cy_ble_clk.c']
 
 if GetDepend(['SOC_CY8C6244LQI_S4D92']):
     src += ['devices/COMPONENT_CAT1A/source/cy_device.c']
