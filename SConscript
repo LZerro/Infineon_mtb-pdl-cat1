@@ -41,6 +41,7 @@ if GetDepend(['SOC_CY8C624ALQI_S2D42']):
 
 if GetDepend(['SOC_CY8C6247BZI_D54']):
     src += ['devices/COMPONENT_CAT1A/source/cy_device.c']
+    src += ['drivers/source/cy_flash.c']
 
 if GetDepend(['SOC_CY8C6347BZI_BLD53']):
     src += ['devices/COMPONENT_CAT1A/source/cy_device.c']
@@ -49,6 +50,8 @@ if GetDepend(['SOC_CY8C6347BZI_BLD53']):
 
 if GetDepend(['SOC_CY8C6244LQI_S4D92']):
     src += ['devices/COMPONENT_CAT1A/source/cy_device.c']
+    src += ['drivers/source/cy_flash.c']
+    src += ['drivers/source/cy_ble_clk.c']
 
 if GetDepend(['SOC_XMC7200D_E272K8384AA']):
     src += ['devices/COMPONENT_CAT1C/source/cy_device.c']
