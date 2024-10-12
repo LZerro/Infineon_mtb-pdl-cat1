@@ -91,6 +91,14 @@ if GetDepend(['BSP_USING_SLIDER']):
 if GetDepend(['RT_USING_WDT']):
     src += ['drivers/source/cy_wdt.c']
 
+if GetDepend(['RT_USING_ETH']):
+    src += ['drivers/source/cy_ephy.c']
+    src += ['drivers/source/cy_ethif.c']
+    src += ['drivers/third_party/ethernet/src/edd.c']
+    src += ['drivers/third_party/ethernet/src/edd_rx.c']
+    src += ['drivers/third_party/ethernet/src/edd_tx.c']
+    path += [cwd + 'drivers/third_party/ethernet/include']
+
 if GetDepend(['RT_USING_HWTIMER']):
     src += ['drivers/source/cy_tcpwm_counter.c']
 
