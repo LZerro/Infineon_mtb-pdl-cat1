@@ -56,6 +56,9 @@ if GetDepend(['SOC_CY8C6244LQI_S4D92']):
 if GetDepend(['SOC_XMC7200D_E272K8384AA']):
     src += ['devices/COMPONENT_CAT1C/source/cy_device.c']
 
+if GetDepend(['SOC_XMC7100D_F144K4160AA']):
+    src += ['devices/COMPONENT_CAT1C/source/cy_device.c']
+
 if GetDepend(['RT_USING_SERIAL']):
     src += ['drivers/source/cy_dma.c']
     src += ['drivers/source/cy_dmac.c']
@@ -130,6 +133,10 @@ if GetDepend(['SOC_CY8C6244LQI_S4D92']):
     path += [cwd + '/devices/COMPONENT_CAT1A/include/ip']
 
 if GetDepend(['SOC_XMC7200D_E272K8384AA']):
+    path += [cwd + '/devices/COMPONENT_CAT1C/include']
+    path += [cwd + '/devices/COMPONENT_CAT1C/include/ip']
+
+if GetDepend(['SOC_XMC7100D_F144K4160AA']):
     path += [cwd + '/devices/COMPONENT_CAT1C/include']
     path += [cwd + '/devices/COMPONENT_CAT1C/include/ip']
 
